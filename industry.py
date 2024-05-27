@@ -104,3 +104,16 @@ formatted_df['Net Profit Margin'] = formatted_df['Net Profit Margin'].apply("{:.
 st.subheader(f"Data Table for {selected_industry}:")
 st.table(formatted_df)
 
+# Adding the footer
+footer = """
+<div style="text-align: center;">
+    <p>This dashboard created by 
+    <a href="https://faizazizan.com" target="_blank">Faiz Azizan</a> 
+    ❤️ Feel free to take a look at more tools 
+    <a href="https://faizazizan.com/tools" target="_blank">here</a>.
+    </p>
+</div>
+"""
+
+st.markdown(footer, unsafe_allow_html=True)
+
